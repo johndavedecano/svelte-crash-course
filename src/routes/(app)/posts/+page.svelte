@@ -18,7 +18,10 @@
 
 <div class="container">
 	<div class="card">
-		<div class="card-header">Manage Posts</div>
+		<div class="card-header d-flex">
+			<div class="flex-grow-1">Manage Posts</div>
+			<a href="/posts/create" class="btn btn-primary btn-sm">Add New</a>
+		</div>
 		<div class="card-body">
 			{#each posts as item}
 				<div class="d-flex align-items-center">
