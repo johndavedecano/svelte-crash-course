@@ -39,6 +39,10 @@ class PostModel extends DB {
 	constructor() {
 		super();
 	}
+
+	getByUser(userId) {
+		return this.items.filter((item) => item.userId === userId);
+	}
 }
 
 export const User = new UserModel();
