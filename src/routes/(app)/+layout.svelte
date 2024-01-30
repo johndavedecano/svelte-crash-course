@@ -31,11 +31,7 @@
 					<div class="me-2">
 						Welcome, <span class="fw-bold">{user.name}</span>
 					</div>
-					<button
-						type="button"
-						class="btn btn-outline-primary me-2"
-						on:click={() => goto('/logout')}>Logout</button
-					>
+					<a class="btn btn-outline-primary me-2" href="/logout">Logout</a>
 				</div>
 			{:else}
 				<div class="col-md-3 text-end">
